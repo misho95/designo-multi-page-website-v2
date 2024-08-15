@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NAV_LINKS_LIST } from "../utils/data";
+import { NAV_LINKS_LIST } from "../../utils/data";
 import clsx from "clsx";
 
 type NavPropsType = {
@@ -9,7 +9,7 @@ type NavPropsType = {
 const Navigation = ({ type }: NavPropsType) => {
   return (
     <nav
-      className={clsx("flex gap-[42px]", {
+      className={clsx("flex flex-col sm:flex-row gap-[42px]", {
         "text-white": type === "light",
         "text-DARK_GREY": type === "dark",
       })}
