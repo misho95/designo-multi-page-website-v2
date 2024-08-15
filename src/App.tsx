@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/layout";
+import Layout from "./components/shared/layout";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -9,7 +9,7 @@ const App = () => {
       children: [
         {
           path: "/",
-          element: "home page",
+          element: <div className="h-[800px]">home page</div>,
         },
       ],
     },
