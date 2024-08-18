@@ -1,7 +1,7 @@
-import Logo from "../shared/logo";
-import Navigation from "../shared/navigation";
-import AnimatedHeader from "./aniamted-header";
-import BurgerMenu from "./burger-menu";
+import Logo from "@/components/shared/logo";
+import Navigation from "@/components/shared/navigation";
+import AnimatedHeader from "@/components/header/aniamted-header";
+import BurgerMenu from "@/components/header/burger-menu";
 
 const Header = () => {
   return (

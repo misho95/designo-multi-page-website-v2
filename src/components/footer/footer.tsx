@@ -1,9 +1,9 @@
-import AnimatedFooter from "./animated-footer";
-import Logo from "../shared/logo";
-import Navigation from "../shared/navigation";
-import Separator from "../shared/separator";
-import Icons from "./icons";
-import GetInTouch from "./get-in-touch";
+import AnimatedFooter from "@/components/footer/animated-footer";
+import Logo from "@/components/shared/logo";
+import Navigation from "@/components/shared/navigation";
+import Separator from "@/components/shared/separator";
+import Icons from "@/components/footer/icons";
+import GetInTouch from "@/components/footer/get-in-touch";
 
 const Footer = () => {
   return (

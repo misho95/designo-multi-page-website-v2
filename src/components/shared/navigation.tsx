@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { NAV_LINKS_LIST } from "../../utils/data";
 import clsx from "clsx";
+import { NAV_LINKS_LIST } from "@/utils/data";
 
 type NavPropsType = {
   type: "light" | "dark";

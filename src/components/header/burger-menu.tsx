@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { createPortal } from "react-dom";
-import { HeaderContext } from "./aniamted-header";
-import { NAV_LINKS_LIST } from "../../utils/data";
 import { Link } from "react-router-dom";
 import { animated, useSpring } from "@react-spring/web";
+import { HeaderContext } from "@/components/header/aniamted-header";
+import { NAV_LINKS_LIST } from "@/utils/data";
+import menuOpen from "@/assets/shared/mobile/icon-hamburger.svg";
+import menuClose from "@/assets/shared/mobile/icon-close.svg";
 
 const BurgerMenu = () => {
   const { open, setOpen } = useContext(HeaderContext);
@@ -20,9 +22,9 @@ const BurgerMenu = () => {
     <>
       <button onClick={handleChange}>
         {open ? (
-          <img src="src/assets/shared/mobile/icon-close.svg" alt="close" />
+          <img src={menuOpen} alt="close" width={24} height={20} />
         ) : (
-          <img src="src/assets/shared/mobile/icon-hamburger.svg" alt="open" />
+          <img src={menuClose} alt="open" width={20} height={20} />
         )}
       </button>
       {createPortal(

@@ -1,4 +1,5 @@
-import { Button } from "../shared/button";
+import { Button } from "@/components/shared/button";
+import bgPattern from "@/assets/shared/desktop/bg-pattern-call-to-action.svg";
 
 const GetInTouch = () => {
   return (
@@ -7,8 +8,7 @@ const GetInTouch = () => {
         <div
           className="flex h-full flex-col items-center justify-center gap-[32px] bg-cover bg-center px-[min(96px,5.941vw)] py-[57px] lg:flex-row lg:justify-between lg:py-[73.25px]"
           style={{
-            backgroundImage:
-              "url('src/assets/shared/desktop/bg-pattern-call-to-action.svg')",
+            backgroundImage: `url(${bgPattern})`,
           }}
         >
           <span className="flex flex-col items-center gap-[13.5px] text-center lg:items-start lg:text-left">
