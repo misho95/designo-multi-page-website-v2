@@ -9,7 +9,7 @@ type NavPropsType = {
 const Navigation = ({ type }: NavPropsType) => {
   return (
     <nav
-      className={clsx("flex flex-col sm:flex-row gap-[42px]", {
+      className={clsx("flex flex-col gap-[42px] sm:flex-row", {
         "text-white": type === "light",
         "text-DARK_GREY": type === "dark",
       })}
@@ -19,16 +19,16 @@ const Navigation = ({ type }: NavPropsType) => {
           <Link
             key={link.id}
             to={link.url}
-            className="uppercase text-[14px] leading-[14px] tracking-[2px]  group flex flex-col gap-1 items-center"
+            className="group flex flex-col items-center gap-1 text-[14px] uppercase leading-[14px] tracking-[2px]"
           >
             {link.title}
             <span
               className={clsx(
-                "block h-[1px] w-[0px] group-hover:w-full duration-300",
+                "block h-[1px] w-[0px] duration-300 group-hover:w-full",
                 {
                   "bg-white/50": type === "light",
                   "bg-BLACK/50": type === "dark",
-                }
+                },
               )}
             />
           </Link>

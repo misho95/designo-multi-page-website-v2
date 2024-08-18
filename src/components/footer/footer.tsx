@@ -8,20 +8,20 @@ import GetInTouch from "./get-in-touch";
 const Footer = () => {
   return (
     <AnimatedFooter>
-      <footer className="bg-BLACK text-white relative pt-[253px] pb-[64px] sm:pt-[166px] sm:pb-[83px] lg:pt-[144px] lg:pb-[72px] flex justify-center items-center">
+      <footer className="relative flex items-center justify-center bg-BLACK pb-[64px] pt-[253px] text-white sm:pb-[83px] sm:pt-[166px] lg:pb-[72px] lg:pt-[144px]">
         <GetInTouch />
-        <div className="max-w-[1111px] w-[77.15%] flex flex-col gap-10 ">
-          <div className="flex flex-col md:flex-row justify-between gap-[40px] md:gap-5 items-center">
+        <div className="flex w-[77.15%] max-w-[1111px] flex-col gap-10">
+          <div className="flex flex-col items-center justify-between gap-[40px] md:flex-row md:gap-5">
             <Logo type="light" />
             <div className="w-full md:hidden">
               <Separator type="light" />
             </div>
             <Navigation type="light" />
           </div>
-          <div className="hidden sm:block w-full">
+          <div className="hidden w-full sm:block">
             <Separator type="light" />
           </div>
-          <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start text-center sm:text-left text-white/50 leading-[26px] gap-[40px]">
+          <div className="flex flex-col items-center justify-between gap-[40px] text-center leading-[26px] text-white/50 sm:flex-row sm:items-start sm:text-left">
             <p>
               <span className="font-bold">Designo Central Office</span>
               <br />

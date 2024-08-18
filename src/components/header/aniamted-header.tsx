@@ -34,8 +34,8 @@ const AnimatedHeader = ({ children }: { children: ReactNode }) => {
     transform: open
       ? "translate(0%, 0%)"
       : scrollY > prevY.current
-      ? "translate(0%, -100%)"
-      : "translate(0%, 0%)",
+        ? "translate(0%, -100%)"
+        : "translate(0%, 0%)",
     config: {
       mass: 5,
       friction: 20,
@@ -46,7 +46,7 @@ const AnimatedHeader = ({ children }: { children: ReactNode }) => {
 
   return (
     <HeaderContext.Provider value={{ open, setOpen }}>
-      <animated.div style={{ ...props }} className="sticky top-0 z-[99] ">
+      <animated.div style={{ ...props }} className="sticky top-0 z-[99]">
         {children}
       </animated.div>
     </HeaderContext.Provider>

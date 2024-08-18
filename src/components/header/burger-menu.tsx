@@ -28,15 +28,15 @@ const BurgerMenu = () => {
       {createPortal(
         <animated.div
           style={springs}
-          className="bg-black/50 backdrop-blur-sm fixed top-[101px] w-full h-full z-[99] sm:hidden"
+          className="fixed top-[101px] z-[99] h-full w-full bg-black/50 backdrop-blur-sm sm:hidden"
         >
-          <div className="bg-BLACK px-[24px] py-[48px] flex flex-col gap-[32px]">
+          <div className="flex flex-col gap-[32px] bg-BLACK px-[24px] py-[48px]">
             {NAV_LINKS_LIST.map((link) => {
               return (
                 <Link
                   key={link.id}
                   to={link.url}
-                  className="text-[24px] leading-[25px] tracking-[2px] text-white uppercase"
+                  className="text-[24px] uppercase leading-[25px] tracking-[2px] text-white"
                 >
                   {link.title}
                 </Link>
@@ -44,7 +44,7 @@ const BurgerMenu = () => {
             })}
           </div>
         </animated.div>,
-        document.body
+        document.body,
       )}
     </>
   );
