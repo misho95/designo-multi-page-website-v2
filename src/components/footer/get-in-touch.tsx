@@ -2,20 +2,20 @@ import { Button } from "../shared/button";
 
 const GetInTouch = () => {
   return (
-    <div className="max-w-[1111px] w-[89.844%] lg:w-[77.20%] absolute top-0 left-1/2 -translate-x-1/2 h-[327px] sm:h-[350px] lg:h-[292px] pointer-events-none">
-      <div className="bg-PEACH rounded-[15px] relative -top-[50%] sm:-top-[76.28571428571429%] lg:-top-[75.34246575342466%] pointer-events-auto">
+    <div className="pointer-events-none absolute left-1/2 top-0 h-[327px] w-[89.844%] max-w-[1111px] -translate-x-1/2 sm:h-[350px] lg:h-[292px] lg:w-[77.20%]">
+      <div className="pointer-events-auto relative -top-[50%] rounded-[15px] bg-PEACH sm:-top-[76.28571428571429%] lg:-top-[75.34246575342466%]">
         <div
-          className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-[32px] h-full bg-cover bg-center py-[57px] px-[min(96px,5.941vw)] lg:py-[73.25px] "
+          className="flex h-full flex-col items-center justify-center gap-[32px] bg-cover bg-center px-[min(96px,5.941vw)] py-[57px] lg:flex-row lg:justify-between lg:py-[73.25px]"
           style={{
             backgroundImage:
               "url('src/assets/shared/desktop/bg-pattern-call-to-action.svg')",
           }}
         >
-          <span className="flex flex-col items-center lg:items-start text-center lg:text-left gap-[13.5px]">
-            <h2 className="text-[32px] sm:text-[40px] font-[500] leading-[36px] sm:leading-[40px] shrink-0">
+          <span className="flex flex-col items-center gap-[13.5px] text-center lg:items-start lg:text-left">
+            <h2 className="shrink-0 text-[32px] font-[500] leading-[36px] sm:text-[40px] sm:leading-[40px]">
               Let’s talk about <br /> your project
             </h2>
-            <p className="leading-[25px] sm:leading-[26px] text-[15px] sm:text-[16px]">
+            <p className="text-[15px] leading-[25px] sm:text-[16px] sm:leading-[26px]">
               Ready to take it to the next level? Contact us today and find out
               <br />
               how our expertise can help your business grow.

@@ -5,7 +5,7 @@ const DesignPack = lazy(() => import("../components/home/design-pack"));
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col gap-[120px] sm:gap-[160px] items-center">
+    <div className="flex flex-col items-center gap-[120px] sm:gap-[160px]">
       <FrameCard />
       <div className="w-full">
         <DesignPack />

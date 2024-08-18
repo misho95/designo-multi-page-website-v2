@@ -14,7 +14,7 @@ const Logo = ({ type }: LogoPropsType) => {
             : "src/assets/shared/desktop/logo-dark.png"
         }
         alt="logo"
-        className="w-[197px] h-[27px] object-cover select-none object-left"
+        className="h-[27px] w-[197px] select-none object-cover object-left"
       />
     </Link>
   );

@@ -1,6 +1,6 @@
 const AboutPack = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+    <div className="grid grid-cols-1 gap-[30px] lg:grid-cols-3">
       <AboutCard
         img="src/assets/home/desktop/illustration-passionate.svg"
         title="passionate"
@@ -32,13 +32,13 @@ const AboutCard = ({
   text: string;
 }) => {
   return (
-    <div className="max-w-[327px] sm:max-w-[689px] lg:max-w-[350px] flex flex-col sm:flex-row lg:flex-col justify-center items-center gap-[48px] lg:gap-[32px] text-DARK_GREY">
+    <div className="flex max-w-[327px] flex-col items-center justify-center gap-[48px] text-DARK_GREY sm:max-w-[689px] sm:flex-row lg:max-w-[350px] lg:flex-col lg:gap-[32px]">
       <img src={img} alt={title} width={202} height={202} />
-      <div className="flex flex-col gap-[32px] justify-center items-center sm:items-start lg:items-center">
-        <h2 className="text-[20px] font-medium leading-[26px] tracking-[5px] uppercase">
+      <div className="flex flex-col items-center justify-center gap-[32px] sm:items-start lg:items-center">
+        <h2 className="text-[20px] font-medium uppercase leading-[26px] tracking-[5px]">
           {title}
         </h2>
-        <p className="text-[16px] leading-[26px] text-center sm:text-left lg:text-center">
+        <p className="text-center text-[16px] leading-[26px] sm:text-left lg:text-center">
           {text}
         </p>
       </div>

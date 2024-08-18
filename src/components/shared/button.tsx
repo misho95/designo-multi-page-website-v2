@@ -18,7 +18,7 @@ const buttonVariants = cva(
     defaultVariants: {
       variant: "dark",
     },
-  }
+  },
 );
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -30,7 +30,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       />
     );
-  }
+  },
 );
 
 export { Button, buttonVariants };

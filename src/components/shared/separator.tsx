@@ -7,7 +7,7 @@ type SeparatorPropsType = {
 const Separator = ({ type }: SeparatorPropsType) => {
   return (
     <div
-      className={clsx("w-full h-[1px]", {
+      className={clsx("h-[1px] w-full", {
         "bg-white/10": type === "light",
         "bg-black/10": type === "dark",
       })}
