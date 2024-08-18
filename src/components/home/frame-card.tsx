@@ -1,4 +1,6 @@
-import { Button } from "../shared/button";
+import { Button } from "@/components/shared/button";
+import HeroPhone from "@/assets/home/desktop/image-hero-phone.png";
+import HeroPattern from "@/assets/home/desktop/bg-pattern-hero-home.svg";
 
 const FrameCard = () => {
   return (
@@ -18,14 +20,13 @@ const FrameCard = () => {
       <div
         className="absolute left-1/2 top-[40%] h-[913px] w-[624px] -translate-x-1/2 bg-center sm:top-[45%] lg:left-[44%] lg:top-0 lg:translate-x-0"
         style={{
-          backgroundImage: "url(src/assets/home/desktop/image-hero-phone.png)",
+          backgroundImage: `url(${HeroPhone})`,
         }}
       />
       <div
         className="absolute top-0 h-full w-full bg-right bg-no-repeat lg:right-0"
         style={{
-          backgroundImage:
-            "url(src/assets/home/desktop/bg-pattern-hero-home.svg)",
+          backgroundImage: `url(${HeroPattern})`,
         }}
       />
     </div>
