@@ -33,7 +33,7 @@ const AboutCard = ({
 }) => {
   return (
     <div className="max-w-[327px] sm:max-w-[689px] lg:max-w-[350px] flex flex-col sm:flex-row lg:flex-col justify-center items-center gap-[48px] lg:gap-[32px] text-DARK_GREY">
-      <img src={img} />
+      <img src={img} alt={title} width={202} height={202} />
       <div className="flex flex-col gap-[32px] justify-center items-center sm:items-start lg:items-center">
         <h2 className="text-[20px] font-medium leading-[26px] tracking-[5px] uppercase">
           {title}

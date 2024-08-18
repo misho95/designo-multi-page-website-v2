@@ -1,6 +1,7 @@
-import AboutPack from "../components/home/about-pack";
-import DesignPack from "../components/home/design-pack";
+import { lazy } from "react";
 import FrameCard from "../components/home/frame-card";
+const AboutPack = lazy(() => import("../components/home/about-pack"));
+const DesignPack = lazy(() => import("../components/home/design-pack"));
 
 const HomePage = () => {
   return (

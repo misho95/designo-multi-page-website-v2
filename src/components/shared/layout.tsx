@@ -1,6 +1,7 @@
+import { lazy } from "react";
 import { Outlet } from "react-router-dom";
-import Footer from "../footer/footer";
 import Header from "../header/header";
+const Footer = lazy(() => import("../footer/footer"));
 
 const Layout = () => {
   return (
