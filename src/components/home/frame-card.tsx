@@ -15,12 +15,12 @@ const FrameCard = () => {
         <Button>learn more</Button>
       </div>
 
-      {/* <div
-        className="bg-center w-[624px] h-[913px] absolute top-[40%] sm:top-[45%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[44%] lg:top-0"
+      <div
+        className="absolute left-1/2 top-[40%] h-[913px] w-[624px] -translate-x-1/2 bg-center sm:top-[45%] lg:left-[44%] lg:top-0 lg:translate-x-0"
         style={{
           backgroundImage: "url(src/assets/home/desktop/image-hero-phone.png)",
         }}
-      /> */}
+      />
       <div
         className="absolute top-0 h-full w-full bg-right bg-no-repeat lg:right-0"
         style={{
