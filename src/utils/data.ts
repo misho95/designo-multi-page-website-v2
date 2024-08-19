@@ -2,16 +2,16 @@ export const NAV_LINKS_LIST = [
   {
     id: 1,
     title: "our company",
-    url: "/",
+    url: "/our-company",
   },
   {
     id: 2,
     title: "locations",
-    url: "/",
+    url: "/locations",
   },
   {
     id: 3,
     title: "contact",
-    url: "/",
+    url: "/contact",
   },
 ];

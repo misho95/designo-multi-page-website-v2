@@ -12,6 +12,30 @@ const App = () => {
           path: "/",
           element: <HomePage />,
         },
+        {
+          path: "/web-design",
+          element: "web design",
+        },
+        {
+          path: "/app-design",
+          element: "app design",
+        },
+        {
+          path: "/graphic-design",
+          element: "graphic design",
+        },
+        {
+          path: "/our-company",
+          element: "our-company",
+        },
+        {
+          path: "/locations",
+          element: "locations",
+        },
+        {
+          path: "/contact",
+          element: "contact",
+        },
       ],
     },
   ]);
