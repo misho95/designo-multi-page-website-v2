@@ -6,20 +6,20 @@ const links = [
     id: 0,
     url: "/web-design",
     title: "web design",
-    img: "src/assets/home/desktop/image-web-design-small.webp",
+    img: "/assets/home/desktop/image-web-design-small.webp",
   },
   {
     id: 1,
     url: "/app-design",
     title: "app design",
-    img: "src/assets/home/desktop/image-app-design.webp",
+    img: "/assets/home/desktop/image-app-design.webp",
   },
 
   {
     id: 2,
     url: "/graphic-design",
     title: "graphic design",
-    img: "src/assets/home/desktop/image-graphic-design.webp",
+    img: "/assets/home/desktop/image-graphic-design.webp",
   },
 ];
 
