@@ -11,10 +11,10 @@ const TitleCard = ({ title, text }: PropsType) => {
         backgroundImage: `url(/assets/web-design/desktop/bg-pattern-intro-web.svg)`,
       }}
     >
-      <h1 className="text-[48px] font-medium capitalize leading-[48px]">
+      <h1 className="text-[32px] font-medium capitalize leading-[36px] sm:text-[48px] sm:leading-[48px]">
         {title}
       </h1>
-      <p className="max-w-[400px] text-wrap text-[16px] leading-[26px]">
+      <p className="max-w-[400px] text-wrap text-[15px] leading-[25px] sm:text-[16px] sm:leading-[26px]">
         {text}
       </p>
     </div>

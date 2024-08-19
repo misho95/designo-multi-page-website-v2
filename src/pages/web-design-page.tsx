@@ -5,7 +5,7 @@ import { WEB_DESIGN_DATA } from "@/utils/data";
 
 const WebDesignPage = () => {
   return (
-    <div className="flex flex-col gap-[160px] px-[24px] sm:px-0">
+    <div className="flex flex-col gap-[96px] px-[24px] sm:gap-[120px] sm:px-0 lg:gap-[160px]">
       <TitleCard
         title="web design"
         text="We build websites that serve as powerful marketing tools and
