@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/shared/layout";
-import HomePage from "./pages/home-page";
+import Layout from "@/components/shared/layout";
+import HomePage from "@/pages/home-page";
+import WebDesignPage from "@/pages/web-design-page";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -14,7 +15,7 @@ const App = () => {
         },
         {
           path: "/web-design",
-          element: "web design",
+          element: <WebDesignPage />,
         },
         {
           path: "/app-design",
