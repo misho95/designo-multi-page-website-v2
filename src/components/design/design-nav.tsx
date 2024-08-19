@@ -1,19 +1,20 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import DesignNavCard from "@/components/home/design-nav-card";
 
 const links = [
   {
     id: 0,
-    url: "/app-design",
-    title: "app design",
-    img: "src/assets/home/desktop/image-app-design.webp",
-  },
-  {
-    id: 1,
     url: "/web-design",
     title: "web design",
     img: "src/assets/home/desktop/image-web-design-small.webp",
   },
+  {
+    id: 1,
+    url: "/app-design",
+    title: "app design",
+    img: "src/assets/home/desktop/image-app-design.webp",
+  },
+
   {
     id: 2,
     url: "/graphic-design",

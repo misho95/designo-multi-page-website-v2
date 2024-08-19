@@ -22,9 +22,9 @@ const BurgerMenu = () => {
     <>
       <button onClick={handleChange}>
         {open ? (
-          <img src={menuOpen} alt="close" width={24} height={20} />
+          <img src={menuClose} alt="close" width={24} height={20} />
         ) : (
-          <img src={menuClose} alt="open" width={20} height={20} />
+          <img src={menuOpen} alt="open" width={20} height={20} />
         )}
       </button>
       {createPortal(

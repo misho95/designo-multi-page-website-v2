@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "@/components/shared/layout";
 import HomePage from "@/pages/home-page";
 import WebDesignPage from "@/pages/web-design-page";
+import AppDesignPage from "./pages/app-design-page";
+import GraphicDesignPage from "./pages/graphic-design-page";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -19,11 +21,11 @@ const App = () => {
         },
         {
           path: "/app-design",
-          element: "app design",
+          element: <AppDesignPage />,
         },
         {
           path: "/graphic-design",
-          element: "graphic design",
+          element: <GraphicDesignPage />,
         },
         {
           path: "/our-company",
