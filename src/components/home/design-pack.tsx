@@ -1,6 +1,6 @@
-import weDesign from "@/assets/home/desktop/image-web-design-small.jpg";
-import appDesign from "@/assets/home/desktop/image-app-design.jpg";
-import graphicDesign from "@/assets/home/desktop/image-graphic-design.jpg";
+import weDesign from "@/assets/home/desktop/image-web-design-small.webp";
+import appDesign from "@/assets/home/desktop/image-app-design.webp";
+import graphicDesign from "@/assets/home/desktop/image-graphic-design.webp";
 
 const DesignPack = () => {
   return (
