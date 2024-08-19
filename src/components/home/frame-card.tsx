@@ -1,5 +1,5 @@
 import { Button } from "@/components/shared/button";
-import HeroPhone from "@/assets/home/desktop/image-hero-phone.png";
+import HeroPhone from "@/assets/home/desktop/image-hero-phone.webp";
 import HeroPattern from "@/assets/home/desktop/bg-pattern-hero-home.svg";
 
 const FrameCard = () => {
