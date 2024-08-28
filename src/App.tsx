@@ -4,6 +4,7 @@ import HomePage from "@/pages/home-page";
 import WebDesignPage from "@/pages/web-design-page";
 import AppDesignPage from "./pages/app-design-page";
 import GraphicDesignPage from "./pages/graphic-design-page";
+import AboutPage from "./pages/about-page";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const App = () => {
         },
         {
           path: "/our-company",
-          element: "our-company",
+          element: <AboutPage />,
         },
         {
           path: "/locations",
