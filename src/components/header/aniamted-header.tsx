@@ -8,6 +8,10 @@ const AnimatedHeader = ({ children }: { children: ReactNode }) => {
   const [open, setOpen] = useState(false);
   const prevY = useRef(0);
 
+  useEffect(() => {
+    console.log("scroll: ", scrollY, "prev: ", prevY);
+  }, [prevY, scrollY]);
+
   const handleScroll = () => {
     const scrollTop =
       document.documentElement.scrollTop || document.body.scrollTop;
