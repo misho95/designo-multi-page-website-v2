@@ -5,7 +5,7 @@ import DesignNavCard from "@/components/home/design-nav-card";
 
 const DesignPack = () => {
   return (
-    <div className="grid h-[640px] grid-cols-1 gap-[24px] px-[24px] sm:px-0 lg:grid-cols-2">
+    <div className="grid grid-cols-1 gap-[24px] px-[24px] sm:px-0 lg:h-[640px] lg:grid-cols-2">
       <div className="lg:min-h-auto min-h-[250px] sm:min-h-[200px] lg:row-span-2">
         <DesignNavCard title={"web design"} img={weDesign} url="/web-design" />
       </div>

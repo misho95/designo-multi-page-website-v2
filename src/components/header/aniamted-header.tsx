@@ -8,10 +8,6 @@ const AnimatedHeader = ({ children }: { children: ReactNode }) => {
   const [open, setOpen] = useState(false);
   const prevY = useRef(0);
 
-  useEffect(() => {
-    console.log("scroll: ", scrollY, "prev: ", prevY);
-  }, [prevY, scrollY]);
-
   const handleScroll = () => {
     const scrollTop =
       document.documentElement.scrollTop || document.body.scrollTop;
@@ -37,7 +33,7 @@ const AnimatedHeader = ({ children }: { children: ReactNode }) => {
   const props = useSpring({
     transform: open
       ? "translate(0%, 0%)"
-      : scrollY > prevY.current
+      : scrollY >= prevY.current
         ? "translate(0%, -100%)"
         : "translate(0%, 0%)",
     config: {
