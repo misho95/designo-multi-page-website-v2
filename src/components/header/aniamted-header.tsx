@@ -33,7 +33,7 @@ const AnimatedHeader = ({ children }: { children: ReactNode }) => {
   const props = useSpring({
     transform: open
       ? "translate(0%, 0%)"
-      : scrollY >= prevY.current
+      : scrollY > prevY.current
         ? "translate(0%, -100%)"
         : "translate(0%, 0%)",
     config: {
